@@ -1,0 +1,33 @@
+{
+  "name": "supplement-keyword-scout",
+  "version": "1.0.0",
+  "description": "Keyword research tool for a joint-health supplement affiliate/dropship offer. Uses SerpApi (preferred) with a Playwright scraping fallback.",
+  "type": "module",
+  "main": "src/main.js",
+  "bin": {
+    "supplement-keyword-scout": "src/main.js"
+  },
+  "scripts": {
+    "start": "node src/main.js",
+    "scout": "node src/main.js",
+    "sync-notion": "node src/main.js --sync-notion",
+    "test": "node --test"
+  },
+  "keywords": [
+    "keyword-research",
+    "affiliate",
+    "dropshipping",
+    "serpapi",
+    "playwright",
+    "supplements"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "playwright": "^1.45.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
