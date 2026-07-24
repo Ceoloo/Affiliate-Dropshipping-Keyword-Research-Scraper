@@ -30,6 +30,26 @@ Optionally, `--sync-notion` pushes the matrix to a Notion database.
 
 ---
 
+## Ecosystem scope — intentionally standalone
+
+This tool is **not** wired into the TechOps `aion_platform` ecosystem, and that
+is a deliberate decision (see the cross-repo `AUDIT.md`, migration step 8):
+
+- Its output is **keyword research** — a prioritized keyword matrix and an
+  opportunity report — **not leads or contacts**. The TechOps outreach system
+  consumes *approved business leads* (from the Local Lead Scraper); keywords are
+  not outreach targets, so there is nothing to hand off to the outreach queue.
+- For the same reason it does **not** emit `aion_platform` lead/outreach events.
+  Doing so would be a category error (a keyword is not a `lead.*`).
+- It therefore stays a self-contained affiliate/dropship research tool with its
+  own Node/Playwright stack and its own Notion sink.
+
+If a future need arises to see scraper *runs* in the shared event log, the only
+sensible additions would be operational events (e.g. `service.health_reported`)
+— never lead or handoff events.
+
+---
+
 ## Setup
 
 Requires **Node.js ≥ 18**.

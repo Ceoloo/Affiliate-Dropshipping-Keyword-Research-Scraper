@@ -14,7 +14,7 @@ import { log, sleep } from './util.js';
 
 const NOTION_VERSION = '2022-06-28';
 
-function pageProperties(r) {
+export function pageProperties(r) {
   const buckets = (r.buckets || [r.bucket]).join(', ');
   return {
     Keyword: { title: [{ text: { content: String(r.keyword).slice(0, 2000) } }] },
