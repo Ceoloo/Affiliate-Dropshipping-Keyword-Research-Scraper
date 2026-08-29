@@ -1,5 +1,7 @@
 # supplement-keyword-scout
 
+[![CI](https://github.com/Ceoloo/Affiliate-Dropshipping-Keyword-Research-Scraper/actions/workflows/ci.yml/badge.svg)](https://github.com/Ceoloo/Affiliate-Dropshipping-Keyword-Research-Scraper/actions/workflows/ci.yml)
+
 A Node.js + Playwright keyword-research tool for a **joint-health supplement
 affiliate / dropship offer**. It pulls Google SERP signals (and Amazon product
 data for shopping-intent keywords), scores each keyword for **commercial
